@@ -1,0 +1,11 @@
+$mainColor:white;
+$mainBackgroundColor:black;
+
+.app-container{
+
+    background-color: $mainBackgroundColor;
+    color: $mainColor;
+    height: 100%;
+    width: 100vw;
+
+}

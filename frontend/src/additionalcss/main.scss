@@ -1,0 +1,99 @@
+.main-container{
+    color:  white;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100vw;
+    margin-top: 150px;
+    user-select: none;
+    @media screen and (max-width:700px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        justify-content: flex-start;
+    } 
+    @media screen and (max-height:1000) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 0    ;
+    } 
+
+}
+.main-container-left{
+    height: 500px;
+    max-width: 500px;
+    // border: 1px solid white;    
+    border-left: 1px solid rgb(138, 138, 138);
+    border-bottom: 1px solid rgb(138, 138, 138);
+    padding: 10px;
+    @media screen and (max-width:700px) {height: 250px; border: none; } 
+    display: flex;  
+    flex-direction: column;
+
+    h1{
+        font-size: 7rem;
+        @media screen and (max-width:900px) {font-size: 5rem; } 
+        @media screen and (max-width:650px) {font-size: 4rem; } 
+        @media screen and (max-width:480px) {font-size: 3rem; } 
+    }
+    p{
+        margin-bottom: 10px;
+        @media screen and (max-width:900px) {font-size: 13px; } 
+        @media screen and (max-width:650px) {font-size: 11px; } 
+        @media screen and (max-width:480px) {font-size: 9px; } 
+        
+    }
+    .main-btn{
+        background-color: white;
+        text-align: center;
+        color: black;
+        padding: 10px;
+        width: 150px;
+        // align-self: center;  
+        margin-top: 20px;
+        border: 1px solid white;
+        transition: 0.3s ease all;
+        @media screen and (max-width:650px) {width: 100px; padding: 7px; } 
+        @media screen and (max-width:480px) {width: 80px; padding: 5px; } 
+        @media screen and (max-width:700px) {align-self: center; } 
+    }.main-btn:hover{background-color: black; color: white;}
+    
+}
+.main-container-right{
+    // border: 1px solid white;    
+    border-top: 1px solid rgb(138, 138, 138);
+    border-right: 1px solid rgb(138, 138, 138);
+    max-height: 500px;
+    max-width: 500px;
+    @media screen and (max-width:700px) {border: none; } 
+
+    h1{
+        font-size: 3rem;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        @media screen and (max-width:900px) {font-size: 2.5rem; } 
+
+    }
+    .skills-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .skills-img{
+        width: 30%;
+        aspect-ratio: 1;
+        @media screen and (max-width:900px) {width:25%; } 
+        @media screen and (max-width:700) {width:20%;} 
+        object-fit: contain;
+
+    }
+
+
+
+}
